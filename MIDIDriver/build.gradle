@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'android-library' // Android Studio < 0.8.0
+apply plugin: 'maven-publish'
 
 repositories {
     maven {
@@ -47,13 +47,13 @@ android {
     }
 }
 
-apply plugin: 'maven'
 group = 'jp.kshoji'
-uploadArchives {
-    repositories.mavenDeployer {
-        repository url: 'file://' + file('snapshots').absolutePath
-        pom.version = '0.1.6'
-        pom.artifactId = 'midi-driver'
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'jp.kshoji'
+            artifactId = 'midi-driver'
+            version = '0.1.7-prerelease'
+        }
     }
 }
-task install(dependsOn: uploadArchives)
