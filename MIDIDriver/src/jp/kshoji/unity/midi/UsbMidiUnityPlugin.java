@@ -5,8 +5,9 @@ import java.util.Locale;
 import android.content.Context;
 import android.hardware.usb.UsbDevice;
 import android.os.Build;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import com.unity3d.player.UnityPlayer;
 import jp.kshoji.driver.midi.device.MidiInputDevice;

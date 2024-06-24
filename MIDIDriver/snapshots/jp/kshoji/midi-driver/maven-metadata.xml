@@ -3,7 +3,7 @@
   <groupId>jp.kshoji</groupId>
   <artifactId>midi-driver</artifactId>
   <versioning>
-    <release>0.1.6</release>
+    <release>0.1.7-prerelease</release>
     <versions>
       <version>0.0.1-SNAPSHOT</version>
       <version>0.0.1</version>
@@ -20,7 +20,8 @@
       <version>0.1.5-SNAPSHOT</version>
       <version>0.1.5</version>
       <version>0.1.6</version>
+      <version>0.1.7-prerelease</version>
     </versions>
-    <lastUpdated>20220225035526</lastUpdated>
+    <lastUpdated>20220703162230</lastUpdated>
   </versioning>
 </metadata>

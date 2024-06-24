@@ -1,12 +1,12 @@
 package jp.kshoji.driver.midi.activity;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -30,7 +30,7 @@ import jp.kshoji.driver.midi.listener.OnMidiInputEventListener;
  * 
  * @author K.Shoji
  */
-public class MidiFragmentHostActivity extends Activity implements OnMidiDeviceDetachedListener, OnMidiDeviceAttachedListener, OnMidiInputEventListener {
+public class MidiFragmentHostActivity extends AppCompatActivity implements OnMidiDeviceDetachedListener, OnMidiDeviceAttachedListener, OnMidiInputEventListener {
     /**
 	 * Implementation for multiple device connections.
 	 * 

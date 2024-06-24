@@ -1,12 +1,13 @@
 package jp.kshoji.driver.midi.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.hardware.usb.UsbDevice;
 import android.hardware.usb.UsbManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import jp.kshoji.driver.midi.device.MidiDeviceConnectionWatcher;
 import jp.kshoji.driver.midi.device.MidiInputDevice;
@@ -22,7 +23,7 @@ import jp.kshoji.driver.midi.listener.OnMidiInputEventListener;
  * 
  * @author K.Shoji
  */
-public abstract class AbstractSingleMidiActivity extends Activity implements OnMidiDeviceDetachedListener, OnMidiDeviceAttachedListener, OnMidiInputEventListener {
+public abstract class AbstractSingleMidiActivity extends AppCompatActivity implements OnMidiDeviceDetachedListener, OnMidiDeviceAttachedListener, OnMidiInputEventListener {
 	/**
 	 * Implementation for single device connections.
 	 * 
